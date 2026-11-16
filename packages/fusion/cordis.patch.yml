@@ -1,0 +1,3 @@
+- insert:
+    - id: forge-fusion
+      name: '@dsh-forge/fusion'

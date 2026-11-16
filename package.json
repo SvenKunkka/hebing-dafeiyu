@@ -1,0 +1,46 @@
+{
+  "name": "hebing-dafeiyu",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "合并大肥鱼：面向 DSH 机器人的 macOS 卡牌融合客户端 / Open-source macOS bot fusion client",
+  "license": "MIT",
+  "main": "electron/main.mjs",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "setup:electron": "node scripts/setup-electron.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "start": "electron .",
+    "dev": "npm run build && electron .",
+    "pack": "node scripts/package.mjs"
+  },
+  "dependencies": {
+    "@deepseek-ai/dsh": "0.2.1-rc.3",
+    "@deepseek-ai/dsh-typert-protocol": "0.2.1-rc.3",
+    "deepseekbot": "1.4.1"
+  },
+  "overrides": {
+    "zod": "4.6.7",
+    "@modelcontextprotocol/client": "2.3.0",
+    "@modelcontextprotocol/core": "2.3.0",
+    "fflate": "0.8.3",
+    "sharp": "0.35.5",
+    "undici@^7.0.0": "7.30.2",
+    "undici@^8.0.0": "8.12.2"
+  },
+  "devDependencies": {
+    "@electron/get": "4.0.3",
+    "electron": "45.3.3",
+    "esbuild": "0.27.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SvenKunkka/hebing-dafeiyu.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SvenKunkka/hebing-dafeiyu/issues"
+  },
+  "homepage": "https://github.com/SvenKunkka/hebing-dafeiyu#readme"
+}
